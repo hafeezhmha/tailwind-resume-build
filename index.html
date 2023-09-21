@@ -6,7 +6,7 @@
     <link rel="shortcut icon" href="favicon.ico" type="image/ico">
     <script src="https://cdn.tailwindcss.com"></script>
     <script>
-     tailwind.Config = {
+     tailwind.config = {
           theme: { 
               screens: {
               'tablet': '640px',
@@ -35,87 +35,150 @@
             font-family:'NTR';
             src: url('/fonts/NTR.woff2') format('woff2');
         }
+        .smooth-scroll {
+            scroll-behavior: smooth;
+        }
     </style>    
     <title>Hafeez</title>
 </head>
 <!-- body starts -->
-  <body class="bg-gray-900 text-white ml-10 items-center">
-    <header>
-        <h1 class="text-3xl text-center font-NTR mb-2">Mohammed Hafeez Ahmed</h1>
-        <h3 class="text-2xl font-bold mb-2 text-center mb-5">Contact Information</h3>
-            <nav class="mb-5 flex justify-around pb-3">
-                    
-                    <a class="underline" href="mailto:hafeezhmha629@gmail.com" target="_blank" rel="noopener noreferrer">Email</a>
-                    <a class="underline" href="tel:+91XXXXXXXXXX" target="_blank" rel="noopener noreferrer">Phone</a>
-                    <a class="underline" href="https://www.linkedin.com/in/hafeezhmha" target="_blank" rel="noopener noreferrer">LinkedIn</a>
-                    <a class="underline"  href="https://github.com/hafeezhmha" target="_blank" rel="noopener noreferrer">Github</a>  
+<body class="bg-navy m-2 text-slate font-ntr py-4 px-40 smooth-scroll flex-start">
+    <header id="home" class="flex p-2 border-b border-slate gap-4">
+        <div class="flex flex-col">
+            <h1 class="text-3xl text-opal font-ntr">Mohammed Hafeez Ahmed</h1>
+            <h3 class="text-2xl font-bold mb-1 text-white mt-5">Contact Information</h3>
+            <nav class="w-80 mb-5 flex flex-col pb-3">
+                <a class="underline hover:text-white" href="tel:+91XXXXXXXXXX" target="_blank" rel="noopener noreferrer">Phone</a>
+                <a class="underline hover:text-white" href="https://www.linkedin.com/in/hafeezhmha" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+                <a class="underline hover:text-white" href="https://github.com/hafeezhmha" target="_blank" rel="noopener noreferrer">Github</a>
+                <a href="mailto:hafeezhmha629@gmail.com"  target="_blank" rel="noopener noreferrer" class="w-32 mt-2 px-2 py-2 text-opal text-center  border border-opal font-bold hover:underline hover:bg-slate hover:text-white transition duration-300 ease-in-out">
+                Say hi!
+                  </a>
             </nav>
+        </div>
+        <section class="text-opal ml-auto  flex flex-col sticky top-0 mb-2">
+            <a class="hover:text-white"  href="#home">/home</a>
+            <a class="hover:text-white"  href="#education">/education</a>
+            <a class="hover:text-white"  href="#training">/training</a>
+            <a class="hover:text-white" href="#projects">/projects</a>
+            <a class="hover:text-white"  href="#skills">/skills</a>
+        </section>
     </header>
-<div class="border border-sky-500 my-2"></div>
-    <section class="mb-5">
-        <h2 class="text-2xl font-bold mb-2 ">Education</h2>
-        <article>
-            <h3>Bachelor of Mechanical Engineering</h3>
-            <p>K.N.S Institute of Technology</p>
-            <p>Graduated-2022</p>
-        </article>
+    <section  id="education" class="my-5 pb-3  border-b border-slate ">
+        <h2 class="text-2xl font-bold mb-2 text-white">/ Education</h2>
+        <div class="bg-light-navy rounded-lg p-4">
+            <article>
+                <h3 class="text-opal font-bold">Bachelor of Mechanical Engineering</h3>
+                <p>K.N.S Institute of Technology</p>
+                <p>Graduated - 2022</p>
+            </article>
+        </div>
     </section>
 
-<div class="border border-sky-500 my-2"></div>
-
-    <section class="mb-5">
-        <h2 class="text-2xl font-bold mb-2">Training</h2>
-        <article>
-            <h3 class="underline font-bold mb-2"></h3>
-            <p class="italic font-bold">AI Accelerated Full-stack Engineering - Cohort</p>
-            <p class="text-yellow-500 font-bold italic">March 2023 - Present</p>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae hic vel maxime, non placeat saepe dolorem assumenda in aliquam repellendus ab perferendis odio? Sit magnam quo repellendus tenetur? Porro, rem?</p>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque minus vel voluptatem temporibus. Illum laboriosam voluptas aperiam eaque ipsum non quaerat repellat exercitationem? Ex animi beatae rem saepe cum sit.</p>
-        </article>
-        <article>
-            <p class="italic font-bold mt-2">Web development - Course</p>
-            <p class="text-yellow-500 font-bold italic">November 2022 - April 2023</p>
-            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consectetur quia nam reprehenderit praesentium facilis repudiandae voluptatum facere reiciendis, cupiditate tenetur illo ipsa dolorum iure inventore veritatis iste incidunt, aspernatur dolorem?</p>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Non vel, iste iusto minima nostrum qui sit animi eaque perferendis harum nulla hic voluptatum tempore blanditiis totam, placeat incidunt consequuntur inventore!</p>
-        </article>
+    <section id="training" class="mb-5 pb-3 border-b border-slate">
+        <h2 class="text-2xl font-bold mb-2 text-white">/ Training</h2>
+        <div class="bg-light-navy rounded-lg p-4"> <!-- Add a container with a gray background -->
+            <article>
+                <h3 class="underline font-bold mb-2"></h3>
+                <p class="font-bold text-opal">AI Accelerated Full-stack Engineering - Cohort</p>
+                <p class="text-light-slate font-bold">March 2023 - Present</p>
+                <p class="max-w-fit">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae hic vel maxime, non placeat saepe dolorem assumenda in aliquam repellendus 
+                    ab perferendis odio? Sit magnam quo repellendus tenetur Porro, rem.
+                </p>
+                <p class="max-w-fit">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elist. Doloremque minus vel voluptatem temporibus. Illum laboriosam voluptas aperiam eaque 
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque minus vel voluptatem temporibus. Illum laboriosam voluptas aperiam eaque
+                    ipsum non quaerat repellat exercitationem? Ex animi beatae rem saepe cum sit.ipsum non quaerat repellat exercitationem? Ex animi beatae rem 
+                    saepe cum sit. Vitae hic vel maxime, non placeat saepe dolorem.
+                </p>
+            </article>
+            <article>
+                <p class="font-bold mt-2 text-opal">Web development - Course</p>
+                <p class="text-light-slate font-bold">November 2022 - April 2023</p>
+                <p class="max-w-fit">
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consectetur quia nam reprehenderit praesentium facilis repudiandae
+                    voluptatum facere reiciendis, cupiditate tenetur illo ipsa dolorum iure inventore veritatis iste incidunt, aspernatur dolorem.
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Non vel, iste iusto minima nostrum qui sit animi eaque perferendis
+                    harum nulla hic voluptatum tempore blanditiis totam, placeat incidunt consequuntur inventore.
+                </p>
+            </article>
+        </div>
     </section>
-    <div class="border border-sky-500 my-2"></div>
-    <section class="mb-5">
-        <h2 class="text-2xl font-bold mb-2">Work Experience</h2>
+    
+    <section id="experience" class="mb-5 pb-3 border-b border-slate">
+        <h2 class="text-2xl font-bold text-white mb-2">/ Work Experience</h2>
+        <div class="bg-light-navy rounded-lg p-4">
         <article>
-            <h3 class="underline font-bold mb-2">Intern</h3>
-            <p class="italic font-bold">K.K COLORS</p>
-            <p class="text-yellow-500 font-bold italic">March 2023 - Present</p>
-            <ul class="list-disc">
+            <h3 class="underline font-bold mb-2 text-light-slate ">Intern</h3>
+            <p class="font-bold text-opal">K.K COLORS</p>
+            <p class="text-light-slate font-bold">March 2023 - Present</p>
+            <ul class="list-disc pl-4">
                 <li>Developed responsive and user-friendly web applications using HTML, CSS, and JavaScript.</li>
                 <li>Collaborated with designers and back-end developers to ensure seamless integration of front-end and back-end components.</li>
                 <li>Conducted code reviews and provided mentorship to junior developers.</li>
             </ul>
         </article>
         <article>
-            <h3 class="underline font-bold my-2">Web Designer Intern</h3>
-            <p class="italic font-bold">XYZ Design Studio, Anytown, USA</p>
-            <p class="text-yellow-500 font-bold italic">May 2022 - August 2022</p>
-            <ul class="list-disc"> 
+            <h3 class="underline font-bold my-2 text-light-slate">Web Designer Intern</h3>
+            <p class="font-bold text-opal">XYZ Design Studio, Anytown, USA</p>
+            <p class="text-light-slate font-bold">May 2022 - August 2022</p>
+            <ul class="list-disc pl-4"> 
                 <li>Assisted in designing and prototyping user interfaces for client projects.</li>
                 <li>Gained experience in using industry-standard design tools such as Adobe XD and Sketch.</li>
         </article>
+    </div>
     </section>
-    <div class="border border-sky-500 my-2"></div>
-    <section class="mb-5">
-        <h2 class="text-2xl font-bold mb-2">Skills</h2>
-        <ul class="list-disc">
-            <li>HTML5, CSS3, JavaScript</li>
-            <li>Responsive Web Design</li>
-            <li>Front-End Frameworks (e.g., React, Vue.js)</li>
-            <li>Version Control (e.g., Git)</li>
-            <li>UI/UX Design Principles</li>
-            <li>Problem Solving and Debugging</li>
-        </ul>
+
+    <section id="projects" class="mb-5 pb-3 border-b border-slate">
+        <h2 class="text-2xl font-bold mb-2 text-white">/ Projects</h2>
+        <div class="bg-light-navy rounded-lg p-4">
+            <article>
+                <h3 class="underline font-bold mb-2 text-light-slate">Portfolio Website</h3>
+                <p class="font-bold text-opal">Personal Project</p>
+                <p class="text-light-slate font-bold">January 2023 - Present</p>
+                <p class="max-w-fit">
+                    I designed and developed a responsive portfolio website to showcase my front-end web development skills. 
+                    The website includes a clean and modern user interface with smooth animations and interactive elements.
+                </p>
+                <p class="max-w-fit">
+                    Technologies used: HTML, CSS, JavaScript, and the React.js library.
+                </p>
+            </article>
+            <article>
+                <h3 class="underline font-bold my-2 text-light-slate">E-commerce Website Redesign</h3>
+                <p class="font-bold text-opal">Client Project</p>
+                <p class="text-light-slate font-bold">May 2022 - September 2022</p>
+                <p class="max-w-fit">
+                    I led the redesign of an e-commerce website for a client. The project involved improving the user experience,
+                    optimizing page load times, and enhancing the overall look and feel of the site.
+                </p>
+                <p class="max-w-fit">
+                    Technologies used: HTML, CSS, JavaScript, and performance optimization techniques.
+                </p>
+            </article>
+        </div>
     </section>
-    <div class="border border-sky-500 my-2"></div>
-    <footer class="text-center text-xs font-bold italic" >
-        100xRESUME/2023
+    
+    
+    <section id="skills" class="mb-3 pb-3 border-b border-slate">
+        <h2 class="text-2xl font-bold text-white mb-2">/ Skills</h2>
+        <div class="bg-light-navy rounded-lg p-4">
+            <ul class="list-disc pl-4">
+                <li>HTML5, CSS3, JavaScript</li>
+                <li>Responsive Web Design</li>
+                <li>Front-End Frameworks (e.g., React, Vue.js)</li>
+                <li>Version Control (e.g., Git)</li>
+                <li>UI/UX Design Principles</li>
+                <li>Problem Solving and Debugging</li>
+            </ul>
+        </div>
+    </section>
+      
+
+    <footer class="text-center text-xs" >
+        <div>Built and designed by Hafeez.</div>
+        <div>All rights reserved. ©</div>
     </footer>
 </body>
 </html>
